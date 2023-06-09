@@ -9,13 +9,12 @@
 
 <body>
     <!-- ajouter :
-        - critères mot de passe
+        - mot de passe suggéré ?
         - mot de passe doit être le même entre les 2 champs -->
     <form method="get">
         <p>
         <h2>Créez votre compte</h2> <label>Adresse mail :<br>
-            <input type="email" placeholder="rainbow@city.com" name="mail" required></label><br><br>
-        </label><br>
+            <input type="email" placeholder="rainbow@city.com" list="mail" name="mail" required><datalist id="mail"><option value="Rainbow@City.com"></datalist></label><br><br>
         <label>Mot de passe :<br>
             <input type="password" name="password" required></label><br><br>
         <label>Confirmer mot de passe :<br>
