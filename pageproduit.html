@@ -1,87 +1,251 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page de profil</title>
-    <link rel="stylesheet" href="css/pageproduit.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page de profil</title>
+  <link rel="stylesheet" href="css/pageprofil.css">
 </head>
 <body>
-    <div class="desc">
-        <h1>Légo Close</h1>
-    <section>
-        <a href="#" class="container">
-            <div class="card">
-                <div class="content">
-                    <h3 class="title">Maison de repos</h3>
-                    <div class="tags">
-                        <p>2700 av.J.C</p>
-                        <span></span>
-                        <p class="material-icons-round">Likes</p>
-                        <p>5k</p>
-                        <p class="material-icons-round">comments</p>
-                        <p>53</p>
-                    </div>
-                    <div class="text">
-                        <p>
-                            QG officiel de Rainbow city, venez contempler les Raingirls.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <figure>
-                <img src="./images/LegoClose.jpg" alt="" height="220"/>
-            </figure>
-        </a>
-    </section>
-    <div class="comment-section">
-      <h2>Commentaires:</h2>
-      <form id="comment-form">
-        <input type="text" id="name-input" placeholder="Votre nom" required>
-        <textarea id="comment-input" placeholder="Votre commentaire" required></textarea>
-        <button type="submit">Soumettre</button>
-      </form>
-      <ul id="comment-list">
-        --
-      </ul>
-    </div>
   
-    <section id="commentaires">
-        <h2> Derniers commentaires:</h2>
-        <div id="commentaire-form">
-            
-        </div>
-        <div id="commentaires-liste">
-            
-        </div>
-        <div id="commentaires-liste">
-          <div class="commentaire">
-            <span class="nom">Etienne</span>
-            <span class="contenu">J'aime les Raingirls .</span>
-          </div>
-          <div class="commentaire">
-            <span class="nom">Sylvain</span>
-            <span class="contenu">Quel merde ce site.</span>
-          </div>
-          <div class="commentaire">
-            <span class="nom">Jojo</span>
-            <span class="contenu">Quel honte de valoriser les légos.</span>
-          </div>
-          
-          
-
-          
-          
-        </div>
-       
-        
-        
-        
-        
-        
-        
-    </section>
 </body>
-</html>
+<i class="bi bi-emoji-smile-fill"></i>
+</html><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+<body>
+  <div class="main-content">
+    
+    <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+      <div class="container-fluid">
+        
+        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="https://www.creative-tim.com/product/argon-dashboard" target="_blank">Mon Profil</a>
+        
+        <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+          <div class="form-group mb-0">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+              </div>
+              <input class="form-control" placeholder="Search" type="text">
+            </div>
+          </div>
+        </form>
+        
+        <ul class="navbar-nav align-items-center d-none d-md-flex">
+          <li class="nav-item dropdown">
+            <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="media align-items-center">
+                <span class="avatar avatar-sm rounded-circle">
+                  <img alt="Image placeholder" src="./images/avatar.jpg">
+                <div class="media-body ml-2 d-none d-lg-block">
+                  <span class="mb-0 text-sm  font-weight-bold">Rainboy</span>
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+              <div class=" dropdown-header noti-title">
+                <h6 class="text-overflow m-0">Bienvenue!</h6>
+              </div>
+              <a href="../examples/profile.html" class="dropdown-item">
+                <i class="ni ni-single-02"></i>
+                <span>Mon profil</span>
+              </a>
+              <a href="../examples/profile.html" class="dropdown-item">
+                <i class="ni ni-settings-gear-65"></i>
+                <span>Paramètre</span>
+              </a>
+              <a href="../examples/profile.html" class="dropdown-item">
+                <i class="ni ni-calendar-grid-58"></i>
+                <span>Activité</span>
+              </a>
+              <a href="../examples/profile.html" class="dropdown-item">
+                <i class="ni ni-support-16"></i>
+                <span>Support</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#!" class="dropdown-item">
+                <i class="ni ni-user-run"></i>
+                <span>Deconnexion</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-image: url(./images/c8152d57a3de4b6e65455a7dc36b57cd.jpg); background-size: cover; background-position: center top;">
+      
+      <span class="mask bg-gradient-default opacity-8"></span>
+      
+      <div class="container-fluid d-flex align-items-center">
+        <div class="row">
+          <div class="col-lg-7 col-md-10">
+            <h1 class="display-2 text-white">Hello Rainboy</h1>
+            <p class="text-white mt-0 mb-5">Voici ta page de profil, admire toi et deviens un arc-en-ciel.</p>
+            <a href="#!" class="btn btn-info">Modifier profil</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid mt--7">
+      <div class="row">
+        <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+          <div class="card card-profile shadow">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 order-lg-2">
+                <div class="card-profile-image">
+                  <a href="#">
+                    <img src="./images/cardprofil.jpg" class="rounded-circle">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-sm btn-info mr-4">Connect</a>
+                <a href="#" class="btn btn-sm btn-default float-right">Message</a>
+              </div>
+            </div>
+            <div class="card-body pt-0 pt-md-4">
+              <div class="row">
+                <div class="col">
+                  <div class="card-profile-stats d-flex justify-content-center mt-md-5">
+                    <div>
+                      <span class="heading">5/5</span>
+                      <span class="description">Moyenne Avis</span>
+                    </div>
+                    
+                    <div>
+                      <span class="heading">89</span>
+                      <span class="description">Commentaire</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <h3>
+                  kenny mccormick<span class="font-weight-light"></span>
+                </h3>
+                <div class="h5 font-weight-300">
+                  <i class="ni location_pin mr-2"></i>Atlantite, Romania
+                </div>
+                <div class="h5 mt-4">
+                  <i class="ni business_briefcase-24 mr-2"></i>Legionnaire, Masseur
+                </div>
+                <div>
+                  <i class="ni education_hat mr-2"></i>Non binaire
+                </div>
+                <hr class="my-4">
+                <p>J'aime la vie mais surtout les villes en légos.</p>
+                <a href="#">Voir plus</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8 order-xl-1">
+          <div class="card bg-secondary shadow">
+            <div class="card-header bg-white border-0">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h3 class="mb-0">Mon compte</h3>
+                </div>
+                <div class="col-4 text-right">
+                  <a href="#!" class="btn btn-sm btn-primary">Paramètres</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <form>
+                <h6 class="heading-small text-muted mb-4">informations utilisateur</h6>
+                <div class="pl-lg-4">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-username">Nom d'utilisateur</label>
+                        <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="Nom d'utilisateur" value="Rainboy">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-email">Addresse Email</label>
+                        <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="kévin62@example.com">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-first-name">Prénom</label>
+                        <input type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="Prénom" value="kenny">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-last-name">Nom</label>
+                        <input type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Nom" value="Mccormick">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-4">
+                
+                <h6 class="heading-small text-muted mb-4">Contact</h6>
+                <div class="pl-lg-4">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-address">Adresse</label>
+                        <input id="input-address" class="form-control form-control-alternative" placeholder="Addresse" value="Zone 51 Nevada" type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-city">Ville</label>
+                        <input type="text" id="input-city" class="form-control form-control-alternative" placeholder="Ville" value="Atlantide">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-country">Pays</label>
+                        <input type="text" id="input-country" class="form-control form-control-alternative" placeholder="Pays" value="Romania">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-country">Code Postal</label>
+                        <input type="number" id="input-postal-code" class="form-control form-control-alternative" placeholder="Code Postal">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-4">
+                
+                <h6 class="heading-small text-muted mb-4">A propos</h6>
+                <div class="pl-lg-4">
+                  <div class="form-group focused">
+                    <label>Dernier commentaire <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile-fill" viewBox="0 0 16 16">
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zM4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8z"/>
+                    </svg></label>
+                    <text rows="4" class="form-control form-control-alternative" placeholder=" ...">Parfait.Gloire et richesse à Rainbow city!!.</text>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="row align-items-center justify-content-xl-between">
+      <div class="col-xl-6 m-auto text-center">
+        <div class="copyright">
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
