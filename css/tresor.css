@@ -1,0 +1,46 @@
+table{--bs-table-bg: transparent!important;
+    text-align: center;
+border-color: transparent!important;
+border-width: 0px!important;
+margin:0px!important;}
+
+.table-group-divider{border-color: transparent!important;}
+
+form button {
+    font-size: 15px;
+    font-family: Arial;
+    text-align: center;
+    width: 75px;
+    height: 29px;
+    border-width: 0px;
+    color: #ffffff;
+    border-color: #c9712b;
+    font-weight: bold;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    filter: drop-shadow(0px 3.5px 2px #913d0976);
+    text-shadow: 0px 0px 0px #d1884c75;
+    background: rgb(231, 148, 5);
+}
+
+.tresor{text-align: center;}
+
+.tresor select{width: 75px;
+}
+
+.tresor select, .tresor input{
+    background: rgb(255, 255, 255)!important;
+    text-align: center;
+    border-radius: 25px 25px 25px 25px;
+    filter: drop-shadow(0px 3.5px 2px #29292976);
+}
+
+.tresor button:hover {
+    background: rgb(255, 205, 24);
+}
+
+.tresor button:active {
+    background: #c9712b;
+}
