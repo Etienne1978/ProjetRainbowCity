@@ -16,7 +16,7 @@
     <!-- Header  -->
     <header>
         <!-- Navbar  -->
-        <a href="index.html"><img src="./images/logo.png" height="90px" alt="Rainbow City logo"></a>
+        <a href="index.html"><img src="./images/logo.png" height="90px" alt="Rainbow City logo" class="rainbowlogo"></a>
         <div class="flexcol">
             <nav class="flexrow">
                 <div class="meteo"><a href="./meteo.html" class="header-text">Vendredi 30/06/2023<img
@@ -70,7 +70,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active header-text" href="#">Lieu au hasard !</a>
+                                <a class="nav-link active header-text" onclick="hasard()" href="#">Lieu au hasard !</a>
                             </li>
                         </ul>
                     </div>
@@ -93,7 +93,7 @@
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -145,7 +145,7 @@
                             <a class="nav-link active" href="./tresor.html">Chasse au trésor</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active" href="#">Parcours thématiques</a>
+                            <a class="nav-link active" href="./rainbowland.html">RainbowLand</a>
                         </li>
                         <li>
                             <hr class="divider">
@@ -157,7 +157,7 @@
                             <a class="nav-link active" href="#">Accès PMR</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active" href="#">Lieu au hasard !</a>
+                            <a class="nav-link active" onclick="hasard()" href="#">Lieu au hasard !</a>
                         </li>
                         <li>
                             <hr class="divider">
@@ -166,15 +166,15 @@
                             <!-- <div class="footcolumn header-text">Retrouvez-nous sur :</div> -->
                             <div>
                                 <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"
-                                        style="color: #a16737"></i></a>
+                                        style="color: #ffffff"></i></a>
                             </div>
                             <div>
                                 <a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram"
-                                        style="color: #a16737"></i></a>
+                                        style="color: #ffffff"></i></a>
                             </div>
                             <div>
                                 <a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"
-                                        style="color: #a16737"></i></a>
+                                        style="color: #ffffff"></i></a>
                             </div>
                         </div>
                     </ul>
@@ -185,9 +185,9 @@
 
     <!-- Corps du texte  -->
     <!-- <div class="corps"> -->
-    <div id="#headerbody">
+    <div id="headerbody">
 
-        <p> <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem
+        <p class="exemple"> <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem
             ipsum
             <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem
             ipsum
@@ -234,6 +234,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+        <script src="./js/header.js"></script>
 </body>
 
 </html>
