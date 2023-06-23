@@ -15,7 +15,7 @@
 <body>
     <header>
         <!-- Navbar  -->
-        <a href="index.html"><img src="./images/logo.png" height="90px" alt="Rainbow City logo"></a>
+        <a href="index.html"><img src="./images/logo.png" height="90px" alt="Rainbow City logo" class="rainbowlogo"></a>
         <div class="flexcol">
             <nav class="flexrow">
                 <div class="meteo"><a href="./meteo.html" class="header-text">Vendredi 30/06/2023<img
@@ -61,7 +61,7 @@
                                     Explorez
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item header-text" href="#">Chasse au trésor</a></li>
+                                    <li><a class="dropdown-item header-text" href="./tresor.html">Chasse au trésor</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
@@ -69,7 +69,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active header-text" href="#">Lieu au hasard !</a>
+                                <a class="nav-link active header-text" onclick="hasard()" href="#">Lieu au hasard !</a>
                             </li>
                         </ul>
                     </div>
@@ -140,7 +140,7 @@
                             <hr class="divider">
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active" href="#">Chasse au trésor</a>
+                            <a class="nav-link active" href="./tresor.html">Chasse au trésor</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link active" href="#">Parcours thématiques</a>
@@ -155,7 +155,7 @@
                             <a class="nav-link active" href="#">Accès PMR</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active" href="#">Lieu au hasard !</a>
+                            <a class="nav-link active" onclick="hasard()" href="#">Lieu au hasard !</a>
                         </li>
                         <li>
                             <hr class="divider">
@@ -164,15 +164,15 @@
                             <!-- <div class="footcolumn header-text">Retrouvez-nous sur :</div> -->
                             <div>
                                 <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"
-                                        style="color: #a16737"></i></a>
+                                        style="color: #ffffff"></i></a>
                             </div>
                             <div>
                                 <a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram"
-                                        style="color: #a16737"></i></a>
+                                        style="color: #ffffff"></i></a>
                             </div>
                             <div>
                                 <a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"
-                                        style="color: #a16737"></i></a>
+                                        style="color: #ffffff"></i></a>
                             </div>
                         </div>
                     </ul>
@@ -198,35 +198,35 @@
                 </tr>
             </thead>
             <tbody class="table-group-divider">
-                <tr>
-                    <th scope="row" class="caseleft">Matinée</th>
-                    <td><i class="bi bi-rainbow"></i></td>
-                    <td><i class="bi bi-rainbow"></i></td>
-                    <td><i class="bi bi-rainbow"></i></td>
-                    <td><i class="bi bi-rainbow"></i></td>
-                    <td><i class="bi bi-rainbow"></i></td>
-                    <td><i class="bi bi-rainbow"></i></td>
-                    <td><i class="bi bi-rainbow"></i></td>
+                <tr class="matin">
+                    <th scope="row" class="caseleft matin">Matinée</th>
+                    <td><img src="./images/rainbow.png"></td>
+                    <td><img src="./images/rainbow.png"></td>
+                    <td><img src="./images/rainbow.png"></td>
+                    <td><img src="./images/rainbow.png"></td>
+                    <td><img src="./images/rainbow.png"></td>
+                    <td><img src="./images/rainbow.png"></td>
+                    <td><img src="./images/rainbow.png"></td>
                 </tr>
-                <tr>
-                    <th scope="row">Journée</th>
-                    <td><i class="bi bi-sun-fill"></i></td>
-                    <td><i class="bi bi-sun-fill"></i></td>
-                    <td><i class="bi bi-sun-fill"></i></td>
-                    <td><i class="bi bi-sun-fill"></i></td>
-                    <td><i class="bi bi-sun-fill"></i></td>
-                    <td><i class="bi bi-sun-fill"></i></td>
-                    <td><i class="bi bi-sun-fill"></i></td>
+                <tr class="jour">
+                    <th scope="row" class="jour">Journée</th>
+                    <td><img src="./images/sun.png"></td>
+                    <td><img src="./images/sun.png"></td>
+                    <td><img src="./images/sun.png"></td>
+                    <td><img src="./images/sun.png"></td>
+                    <td><img src="./images/sun.png"></td>
+                    <td><img src="./images/sun.png"></td>
+                    <td><img src="./images/sun.png"></td>
                 </tr>
-                <tr>
-                    <th scope="row" class="casebtmleft casebtm">Nuit</th>
-                    <td class="casebtm"><i class="bi bi-cloud-drizzle-fill"></i></td>
-                    <td class="casebtm"><i class="bi bi-cloud-drizzle-fill"></i></td>
-                    <td class="casebtm"><i class="bi bi-cloud-drizzle-fill"></i></td>
-                    <td class="casebtm"><i class="bi bi-cloud-drizzle-fill"></i></td>
-                    <td class="casebtm"><i class="bi bi-cloud-drizzle-fill"></i></td>
-                    <td class="casebtm"><i class="bi bi-cloud-drizzle-fill"></i></td>
-                    <td class="casebtm casebtmright"><i class="bi bi-cloud-drizzle-fill"></i></td>
+                <tr class="nuit">
+                    <th scope="row" class="casebtmleft casebtm nuit">Nuit</th>
+                    <td class="casebtm"><img src="./images/rain.png"></td>
+                    <td class="casebtm"><img src="./images/rain.png"></td>
+                    <td class="casebtm"><img src="./images/rain.png"></td>
+                    <td class="casebtm"><img src="./images/rain.png"></td>
+                    <td class="casebtm"><img src="./images/rain.png"></td>
+                    <td class="casebtm"><img src="./images/rain.png"></td>
+                    <td class="casebtm casebtmright"><img src="./images/rain.png"></td>
                 </tr>
             </tbody>
         </table>
@@ -254,6 +254,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
             crossorigin="anonymous"></script>
+            <script src="./js/header.js"></script>
     </div> <!-- </div pour le corps> -->
 </body>
 

@@ -10,6 +10,8 @@ body {
     height:100%;
 }
 
+/* Header  */
+
 header {
     background: linear-gradient(180deg, rgba(255, 162, 100, 1) 0%, rgba(255, 184, 68, 1) 12%, rgba(255, 241, 105, 1) 68%);
     position: fixed;
@@ -30,6 +32,10 @@ header {
 
 }
 
+.rainbowlogo{
+    filter: drop-shadow(0px 5px 3px rgba(135, 12, 0, 0.282));
+}
+
 .flexcol {
     display: flex;
     flex-direction: column;
@@ -44,6 +50,9 @@ header {
 header .meteo {
     margin-left: 190px;
 }
+
+
+/* Menu burger */
 
 .offbouton {
     position: fixed;
@@ -67,19 +76,56 @@ header .meteo {
     --bs-dropdown-divider-bg: #dec27b;
     padding-left: 20px;
 }
+hr.divider{
+    --bs-border-width: 0px!important;
+    margin: 1.3rem!important;
+}
 
 .nav-item {
     margin-left: 5px;
     margin-right: 5px;
 }
 
+.offbouton .nav-link, .offcanvas-title{
+    color: #fff7a1!important;
+    filter: drop-shadow(0px 4px 3px #2b251d);
+    text-shadow: -1px 1px 0 #8c4100,
+    1px 1px 0 #8c4100,
+   1px -1px 0 #af7a00,
+  -1px -1px 0 #af7a00;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+}
+
+.offbouton .dropdown-item{
+    color: #cbffed!important;
+    filter: drop-shadow(0px 4px 3px #2b251d);
+    text-shadow: -1px 1px 0 #0055ff,
+    1px 1px 0 #0055ff,
+   1px -1px 0 #599fe6,
+  -1px -1px 0 #599fe6;
+    font-size: 17px;
+    letter-spacing: 0.8px;
+}
+
 .offcanvas {
     background: linear-gradient(180deg, rgba(255, 162, 100, 1) 0%, rgba(255, 184, 68, 1) 12%, rgba(255, 241, 105, 1) 68%);
+    background-image: url('../images/legoburger.png')!important;
 }
 
 .iconemenu{justify-content: space-evenly;
 margin-top:30px;
 margin-bottom: 30px;
+}
+
+.iconemenu .bi-twitter{
+    color: #00b3ff!important;
+}
+.iconemenu .bi-instagram{
+    color: #fa3691!important;
+}
+.iconemenu .bi-facebook{
+    color: #006aff!important;
 }
 
 .nav-taille {
@@ -97,6 +143,10 @@ nav {
     --bs-dropdown-link-hover-bg: transparent;
     --bs-dropdown-border-color: #dec27b;
     --bs-dropdown-divider-bg: #dec27b;
+}
+
+.dropdown-item:active{
+    background:transparent;
 }
 
 .header-text {
@@ -126,6 +176,7 @@ nav a:hover {
     width: 30px;
     margin-left: 5px;
     vertical-align: middle;
+    
 }
 
 form {
@@ -185,6 +236,8 @@ header .buttonClass:active {
     background: #c9712b;
 }
 
+/* Corps du texte */
+
 #headerbody {
     width: 100%;
     margin-top: 150px;
@@ -196,12 +249,22 @@ header .buttonClass:active {
     position: relative;
 }
 
+/* .corps {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 40px;
+    position: relative;
+} */
+
 h1 {
     margin-top: 150px;
     text-align: center
 }
 
-p {
+.exemple {
     text-align: center;
 }
 
@@ -233,4 +296,8 @@ footer img {
     float: left;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+footer .bi-twitter,footer .bi-instagram,footer .bi-facebook{
+    color: #a16737!important;
 }

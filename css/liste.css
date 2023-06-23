@@ -1,0 +1,66 @@
+.corps {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+h1,
+h2,
+h3 {
+    filter: drop-shadow(0px 2px 2px #8b8b87);
+    margin-bottom: 50px;
+}
+
+.cartes {
+    display: flex;
+    width: 100%;
+    align-content: space-around;
+    align-items: center;
+}
+
+.card {
+  margin-bottom:50px;
+    width: 75%;
+    border-radius: 25px 25px 25px 25px;
+    background-color: rgba(224, 242, 255, 0.9)!important;
+    border:0px;
+    vertical-align: middle;
+}
+
+.card .row{
+    align-items: center!important;
+    padding-right: 20px!important;
+}
+
+.card img{
+    border-radius: 25px 25px 25px 25px;
+}
+
+.card .btn {
+    font-size: 30px;
+    font-family: Arial;
+    width: 80px;
+    height: 80px;
+    padding-top:17px;
+    vertical-align: middle;
+    border-width: 0px;
+    color: #ffffff;
+    border-color: #c9712b;
+    font-weight: bold;
+    border-radius:100px 100px 100px 100px;
+    filter: drop-shadow(0px 3.5px 2px #913d0976);
+    text-shadow: 0px 0px 0px #d1884c75;
+    background: rgb(231, 148, 5);
+}
+
+.card .btn:hover {
+    background: rgb(255, 205, 24)!important;
+}
+
+.card .btn:active {
+    background: #c9712b!important;
+}

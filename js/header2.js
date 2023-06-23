@@ -1,19 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/header.css">
-    <title>Header</title>
-</head>
-
-<body>
-    <!-- Header  -->
+document.write('\\
+<!-- Header  -->
     <header>
         <!-- Navbar  -->
         <a href="index.html"><img src="./images/logo.png" height="90px" alt="Rainbow City logo" class="rainbowlogo"></a>
@@ -187,7 +173,7 @@
     <!-- <div class="corps"> -->
     <div id="headerbody">
 
-        <p class="exemple"> <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem
+        <p> <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem
             ipsum
             <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem ipsum <br>Lorem
             ipsum
@@ -209,32 +195,4 @@
             ipsum
             <br>
         </p>
-
-        <footer>
-            <span class="header-text">Plan du site</span>
-            <div class="footrow">
-                <!-- <div class="footcolumn header-text">Retrouvez-nous sur :</div> -->
-                <div class="footcolumn">
-                    <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"
-                            style="color: #a16737"></i></a>
-                </div>
-                <div class="footcolumn">
-                    <a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram"
-                            style="color: #a16737"></i></a>
-                </div>
-                <div class="footcolumn">
-                    <a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"
-                            style="color: #a16737"></i></a>
-                </div>
-            </div>
-        </footer>
-    </div> <!-- div du body -->
-
-    <!-- script JS pour bootstrap  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-        <script src="./js/header.js"></script>
-</body>
-
-</html>
+        </div>\\');

@@ -17,7 +17,7 @@
     <!-- Header  -->
     <header>
         <!-- Navbar  -->
-        <a href="index.html"><img src="./images/logo.png" height="90px" alt="Rainbow City logo"></a>
+        <a href="index.html"><img src="./images/logo.png" height="90px" alt="Rainbow City logo" class="rainbowlogo"></a>
         <div class="flexcol">
             <nav class="flexrow">
                 <div class="meteo"><a href="./meteo.html" class="header-text">Vendredi 30/06/2023<img
@@ -72,7 +72,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active header-text" href="#">Lieu au hasard !</a>
+                                <a class="nav-link active header-text" onclick="hasard()" href="#">Lieu au hasard !</a>
                             </li>
                         </ul>
                     </div>
@@ -95,7 +95,7 @@
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -159,7 +159,7 @@
                             <a class="nav-link active" href="#">Accès PMR</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active" href="#">Lieu au hasard !</a>
+                            <a class="nav-link active" onclick="hasard()" href="#">Lieu au hasard !</a>
                         </li>
                         <li>
                             <hr class="divider">
@@ -168,15 +168,15 @@
                             <!-- <div class="footcolumn header-text">Retrouvez-nous sur :</div> -->
                             <div>
                                 <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"
-                                        style="color: #a16737"></i></a>
+                                        style="color: #ffffff"></i></a>
                             </div>
                             <div>
                                 <a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram"
-                                        style="color: #a16737"></i></a>
+                                        style="color: #ffffff"></i></a>
                             </div>
                             <div>
                                 <a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"
-                                        style="color: #a16737"></i></a>
+                                        style="color: #ffffff"></i></a>
                             </div>
                         </div>
                     </ul>
@@ -187,64 +187,59 @@
 
     <!-- Corps du texte  -->
     <div class="corps">
-        <h2>Partez à la chasse de la brique d'or !</h2><br>
-        <img src="./images/tresor.jpg" alt="brique d'or" class="w-25 mb-5"><br>
-        <p class="w-75 mb-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. A laborum vel, magnam porro hic
-            laboriosam fugit tempore libero blanditiis asperiores tenetur, deleniti autem? Quasi qui tempore voluptatum
-            fuga fugit voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia saepe totam, ipsum
-            voluptatum sunt explicabo repudiandae recusandae, veritatis vero neque dolorem. Nemo, quas atque. Cumque
-            veritatis architecto voluptatibus molestias alias. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Ex aperiam animi officia excepturi at quos, beatae reiciendis iusto error, odio esse vel corrupti cupiditate
-            magni? Fugit repellendus debitis neque ea.
-        </p>
-        <form method="get" class="mb-5 tresor">
-        <h3>Je m'inscris</h3>
-        <table class="table">
-            <tbody class="table-group-divider">
-                <tr>
-                    <td>Choisir une date : </td>
-                    <td><input name="date" type="date" min="2023-06-30" value="2023-06-30" required></td>
-                </tr>
-                <tr>
-                    <td>Choisir un crénau : </td>
-                    <td><select name="crenau" required>
-                        <option value="1">9h00</option>
-                        <option value="2">10h30</option>
-                        <option value="3">14h00</option>
-                        <option value="4">15h30</option></td>
-                </tr>
-                <tr>
-                    <td>Nombre de personnes :</td>
-                    <td><select name="personnes" required>
-                        <option value="1" selected>1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option></td>
-                </tr>
-                <tr>
-                    <td colspan="2">  <button type="submit" name="submit">Valider</button></td>
-                </tr>
-            </tbody>
-        </table>
-        </form>
+        <h2>Partez à la recherche de la Brique d'Or !</h2><br>
+        <div class="d-flex flex-row align-items-center justify-content-evenly w-75">
+            <img src="./images/tresor2.png" class="briqueimg" alt="brique d'or">
+            <p class="w-50"> La <a class="brique">Brique d'Or</a>, le symbole de <a class="rainbow">Rainbow City</a> a disparu ! <br> 
+            Aidez l'inspecteur Jean Sherlock (JS) à la retrouver en partant explorer la ville, à la recherche d'indices. <br><br>
+            Pour toute la famille, cet escape game grandeur nature vous permettra de découvrir notre merveilleuse ville, tout en mettant à l'épreuve votre sens de la déduction et votre esprit d'équipe ! <br><br> Jusqu'à 6 personnes, à partir de 7 ans.</p></div>
+        <div class="d-flex flex-row align-items-center justify-content-around w-50"><form method="get" class="tresor">
+            <h3>Je m'inscris</h3>
+            <table class="table">
+                <tbody class="table-group-divider">
+                    <tr>
+                        <td>Choisir une date : </td>
+                        <td><input name="date" type="date" min="2023-06-30" value="2023-06-30" required></td>
+                    </tr>
+                    <tr>
+                        <td>Choisir un crénau : </td>
+                        <td><select name="crenau" required>
+                            <option value="1">9h00</option>
+                            <option value="2">10h30</option>
+                            <option value="3">14h00</option>
+                            <option value="4">15h30</option></td>
+                    </tr>
+                    <tr>
+                        <td>Nombre de personnes :</td>
+                        <td><select name="personnes" required>
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">  <button type="submit" name="submit">Valider</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            </form> <img src="./images/legoTresor.jpg" alt="Mène l'enquête !" class="sherlock"></div>
+       
+        
 
         <footer>
             <span class="header-text">Plan du site</span>
             <div class="footrow">
                 <!-- <div class="footcolumn header-text">Retrouvez-nous sur :</div> -->
                 <div class="footcolumn">
-                    <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"
-                            style="color: #a16737"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a>
                 </div>
                 <div class="footcolumn">
-                    <a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram"
-                            style="color: #a16737"></i></a>
+                    <a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
                 </div>
                 <div class="footcolumn">
-                    <a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"
-                            style="color: #a16737"></i></a>
+                    <a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
                 </div>
             </div>
         </footer>
@@ -252,6 +247,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+        <script src="./js/header.js"></script>
 </body>
 
 </html>
