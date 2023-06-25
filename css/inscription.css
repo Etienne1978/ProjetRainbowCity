@@ -1,0 +1,156 @@
+ h1{
+    text-align: center;
+    border-radius: 100px;
+    border:5px solid rgba(128, 128, 128, 0.60);
+    color:rgba(121, 119, 111, 0.7);  
+    background-color: bisque; 
+    
+ }
+
+
+ .champ{
+        height: 30px;
+        width: 300px;
+        background-color:rgba(255, 228, 196, 0.5);
+        text-align: center;
+        font-weight: bold;
+       }
+
+
+
+ 
+
+ #art1>input,#art2>input,#art3>input{
+                                     color:rgb(29, 16, 61);
+                                     
+                                    }
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    
+   }
+
+ #valemail{
+           
+           height:25px;
+           width: 50px;
+           background-color: red;
+           color:rgb(40, 255, 237);
+           
+           
+           margin: 15px;
+           margin-left: 150px;      
+           
+           
+ }  
+
+
+
+ #valpw{
+   height:25px;
+   width: 50px;
+   background-color: orange;
+   color:rgb(40, 255, 237);  
+   margin: 15px;
+   margin-left: 120px;
+ }
+
+
+
+   #col2,#col3{
+      opacity: 0.3;
+   }
+
+
+
+
+
+
+ .col-4{    
+         margin-top: 50px;
+         border-radius: 50px;
+         border:5px solid rgba(128, 128, 128, 0.61);
+         width: 400px;
+         height: 400px; 
+            
+      }
+
+
+
+ #formpw>ul,h6{
+    font-weight: bold;    
+    }
+
+ #col1{
+     background-image: url("file:///C:/Users/Prêt nurserie/Desktop/ProjetRainbowCity/images/Chiffre1-fotor-bg-remover-2023062121627.png");    
+    }
+
+ #col2{
+    background-image: url("file:///C:/Users/Prêt nurserie/Desktop/ProjetRainbowCity/images/Chiffre2-fotor-bg-remover-2023062121938.png");  
+      }
+
+
+ #col3{
+       background-image: url("file:///C:/Users/Prêt nurserie/Desktop/ProjetRainbowCity/images/Chiffre3-fotor-bg-remover-20230621211056.png");    
+      }
+
+  
+
+li{
+    margin-left: 20px;
+  }
+ 
+ 
+ #inscription{
+    height: 50px;
+    width:150px;
+    background-color: rgba(11, 11, 11, 0);
+    color:rgb(40, 255, 237);
+    font-weight: bold;  
+
+   }
+ 
+
+
+#art1{
+     margin-top: 150px;
+     margin-left: 30px;  
+     color:rgb(40, 255, 237);   
+     }
+
+
+
+#formpw{
+         display: flex;
+         margin-top: 30px;       
+         justify-content: center;  
+         color:rgb(40, 255, 237);
+      }
+
+
+#art2{
+      margin-right: 10px;
+      padding-right: 10px;     
+     }
+
+
+#art3{
+      margin-right:60px;            
+     }
+
+
+
+
+ #formval{
+            display: flex;    
+            text-align: center;   
+            margin-top:150px;
+            margin-left: 80px; 
+            color:rgb(40, 255, 237);             
+        }
+
+
+ 
+
+ 
