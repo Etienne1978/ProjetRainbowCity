@@ -254,7 +254,6 @@ a:hover .content > span {
 
 
 #commentaires {
-  background-color: 
   padding: 20px;
 }
 
@@ -265,7 +264,6 @@ a:hover .content > span {
 
   
   #commentaires {
-    position: ;
     bottom: -1200px;
     left: 50%;
     transform: translateX(-50%);
@@ -290,7 +288,6 @@ a:hover .content > span {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    background-color:
     padding: 20px;
     height: 100px;
   }

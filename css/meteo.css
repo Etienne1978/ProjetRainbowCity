@@ -9,13 +9,15 @@
     position: relative;
 }
 
+h1, h2, h3{
+  filter: drop-shadow(0px 2px 2px #8b8b87);
+}
+
 table{--bs-table-bg: rgb(255, 252, 227)!important;
 text-align: center;
-height: 300px;
+height: 370px;
 border-color:rgb(142, 121, 0)!important;
-border-top-color: transparent!important;
-border-right-color: transparent!important;
-border-left-color: transparent!important;
+border-color: transparent!important;
 filter: drop-shadow(0px 10px 5px rgba(135, 12, 0, 0.282));
 }
 
@@ -23,7 +25,7 @@ tbody, td, tfoot, th, thead, tr {border-width: 1px!important;
     vertical-align: middle;}
 
 th{width:100px;
-    --bs-table-bg: rgb(255, 228, 122)!important;
+    --bs-table-bg: rgb(255, 245, 209)!important;
 }
 
 .casevide{--bs-table-bg: transparent!important;
@@ -42,5 +44,20 @@ border-color: transparent!important;}
 
 .casebtmright{border-radius: 0px 0px 25px 0px;}
 
-.bi-rainbow, .bi-cloud-drizzle-fill, .bi-sun-fill{height:100px!important;}
+.matin{
+  --bs-table-bg: rgb(158, 225, 227)!important;
+}
+
+.jour{
+  --bs-table-bg: rgb(255, 219, 100)!important;
+}
+
+.nuit{
+  --bs-table-bg: rgb(162, 128, 220)!important;
+}
+
+table img{
+  height:75px!important;
+  filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.282));
+}
 

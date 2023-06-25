@@ -1,0 +1,109 @@
+.corps {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+h1,
+h2,
+h3 {
+    filter: drop-shadow(0px 2px 2px #8b8b87);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.lieu {
+    display: flex;
+    width: 75%;
+    align-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.lieu .titre {
+    margin-bottom:50px;
+      border-radius: 25px 25px 25px 25px;
+      border:0px;
+      align-items: center;
+      width:100%;
+  }
+
+.lieu img {
+    width:100%;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.lieutxt{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    align-items: center;
+}
+.lieutxt2{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.commentaires{
+    text-align: center;
+}
+
+
+.cartes {
+    display: flex;
+    width: 100%;
+    align-content: space-around;
+    align-items: center;
+}
+
+.card {
+  margin-bottom:20px;
+    width: 75%;
+    border-radius: 25px 25px 25px 25px;
+    background-color: rgba(224, 242, 255, 0.9)!important;
+    border:0px;
+    vertical-align: middle;
+}
+
+.card .row{
+    align-items: center!important;
+}
+
+.card img{
+width:75%;
+margin-left:18px;
+}
+
+.titre .btn {
+    font-size: 15px;
+    font-family: Arial;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    border-width: 0px;
+    color: #ffffff;
+    border-color: #c9712b;
+    font-weight: bold;
+    border-radius:25px 25px 25px 25px;
+    filter: drop-shadow(0px 3.5px 2px #913d0976);
+    text-shadow: 0px 0px 0px #d1884c75;
+    background: rgb(231, 148, 5);
+}
+
+.titre .btn:hover {
+    background: rgb(255, 205, 24)!important;
+}
+
+.titre .btn:active {
+    background: #c9712b!important;
+}
+
+.comment .btn{
+    
+}

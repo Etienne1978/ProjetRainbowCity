@@ -1,0 +1,93 @@
+
+
+
+
+
+
+.avatar {
+  font-size: 1rem;
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  color: #f02121;
+  border-radius: 50%;
+  background-color: #adb5bd;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.avatar-sm {
+  font-size: .875rem;
+  width: 36px;
+  height: 36px;
+}
+
+
+.card-profile-image img {
+  position: absolute;
+  left: 50%;
+  max-width: 180px;
+  transition: all .15s ease;
+  transform: translate(-50%, -30%);
+  border-radius: .375rem;
+}
+
+.card-profile-image img:hover {
+  transform: translate(-50%, -33%);
+}
+
+.card-profile-stats {
+  padding: 1rem 0;
+}
+
+.card-profile-stats>div {
+  margin-right: 1rem;
+  padding: .875rem;
+  text-align: center;
+}
+
+.card-profile-stats>div:last-child {
+  margin-right: 0;
+}
+
+
+ 
+
+.card-profile-stats>div .description {
+  font-size: .875rem;
+  color: #838186;
+}
+
+
+html {
+  position: relative;
+  min-height: 190%;
+ 
+}
+
+
+  
+
+
+
+
+.card-body {
+  background-color: rgba(224, 242, 255, 0.9)
+}
+
+
+
+
+
+
+
+
+
+
+
+
