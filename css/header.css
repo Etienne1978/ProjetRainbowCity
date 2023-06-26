@@ -48,7 +48,9 @@ header {
 }
 
 header .meteo {
-    margin-left: 190px;
+    margin-left: 170px;
+    display: flex;
+    align-items: center;
 }
 
 
