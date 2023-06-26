@@ -1832,14 +1832,7 @@ textarea[resize='horizontal'] {
   border-color: rgba(50, 151, 211, .25);
 }
 
-.mask {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: all .15s ease;
-}
+
 
 @media screen and (prefers-reduced-motion: reduce) {
   .mask {
@@ -2042,3 +2035,23 @@ p {
 #navbar .navbar {
   margin-bottom: 20px;
 }
+
+html {
+  position: relative;
+  min-height: 195%;
+ 
+}
+
+
+  
+
+
+
+
+.card-body {
+  background-color: rgba(224, 242, 255, 0.9)
+}
+
+
+
+
