@@ -1,0 +1,170 @@
+h1{
+text-align: center;
+border-radius: 100px;
+border:5px solid rgba(128, 128, 128, 0.60);
+color:rgba(121, 119, 111, 0.7);  
+background-color: bisque; 
+
+}
+
+
+.champ{
+height: 30px;
+width: 300px;
+background-color:rgba(255, 228, 196, 0.5);
+text-align: center;
+font-weight: bold;
+}
+
+#col1>img{
+margin-left: 60px;
+margin-top: 20px;
+border-radius: 15px;
+border:5px solid rgba(128, 128, 128, 0.60);
+color:rgba(121, 119, 111, 0.7);  
+}
+
+
+
+#art1>input,#art2>input{
+color:rgb(29, 16, 61);
+background-color: rgb(100, 255, 255);
+
+}
+
+.row{
+display: flex;
+justify-content: space-around;
+
+}
+
+#codes{
+
+height:25px;
+width: 100px;
+background-color: rgba(128, 128, 128, 0.619);
+color:black;
+margin-top: 15px;
+margin-left: 120px;                
+
+
+}  
+
+#email{
+
+background-color: rgb(100, 255, 255);
+}
+
+#h6_2{
+margin-top: 10px;
+}
+
+
+
+#valemail{
+height:25px;
+width: 50px;
+background-color: rgba(128, 128, 128, 0.753);
+color:rgb(0, 0, 0);  
+margin: 15px;
+margin-left: 110px;
+}
+
+
+
+
+.col-4{    
+margin-top: 50px;
+border-radius: 50px;
+border:5px solid rgba(128, 128, 128, 0.61);
+width: 400px;
+height: 400px; 
+background-color:bisque;
+
+}
+
+
+
+#formpw>h6{
+
+margin-top: 30px;
+}
+
+
+#col3{
+display: flex;
+flex-direction: row;
+}
+
+
+#formval>img{
+border-radius: 50px;
+border:5px solid rgba(128, 128, 128, 0.60);
+color:rgba(121, 119, 111, 0.7);  
+margin-top: 30px;
+height: 250px;
+
+
+
+}
+
+
+
+
+#art1{
+margin-top: 10px;
+margin-left: 30px;  
+color:rgb(0, 0, 0);   
+}
+
+
+
+#formpw{
+display: flex;
+flex-direction: column;
+margin-top: 20px;
+margin-left: 40px;       
+justify-content: center;  
+color:rgb(0, 0, 0);
+
+}
+
+#formpw>img{
+   border-radius: 15px;
+   border:5px solid rgba(128, 128, 128, 0.60);
+   color:rgba(121, 119, 111, 0.7);  
+   margin-top: 30px;
+   margin-left: 20px;
+   
+   
+}
+
+
+
+#formval{
+display: flex;  
+flex-direction: column;  
+margin-top:15px;
+margin-left:60px; 
+
+}
+
+#creation{
+margin-top: 20px;
+width: 100px;
+background-color: rgba(128, 128, 128, 0.5);
+margin-left: 80px;
+}
+
+
+#art2>h6{
+   margin-top:20px;
+   margin-left: 5px;
+}
+
+
+
+
+ 
+
+ 
