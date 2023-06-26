@@ -14,15 +14,15 @@
 </head>
 
 <body>
-    <!-- Header  -->
-    <header>
+       <!-- Header  -->
+       <header>
         <!-- Navbar  -->
         <a href="index.html"><img src="./images/logo.png" height="90px" alt="Rainbow City logo" class="rainbowlogo"></a>
         <div class="flexcol">
             <nav class="flexrow">
-                <div class="meteo"><a href="./meteo.html" class="header-text">Vendredi 30/06/2023<img
-                            src="images/soleil.png" alt="soleil" class="soleil"></a> </div>
-                <div>
+                <div class="meteo"><a href="./meteo.html" class="header-text" id="meteo"></a><a href="./meteo.html" class="header-text"><img
+                    src="images/sun.png" alt="soleil" class="soleil"></a> </div>
+        <div>
                     <a href="./nous.html" class="header-text">Qui sommes-nous ?</a>
                     <a href="./connexion.html" class="header-text">Connexion</a>
                     <a href="./connexion.html" class="header-text">Mon profil<img src="./images/icone.png" alt="icone"
@@ -54,8 +54,12 @@
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item header-text" href="#">Monuments</a></li>
-                                </ul>
+                                    <li><a class="dropdown-item header-text" href="#">Sa culture</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item header-text" href="#">Devenez Resident</a></li>
+                                </ul>  
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle active header-text" href="#" role="button"
@@ -63,12 +67,16 @@
                                     Explorez
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item header-text" href="./tresor.html">Chasse au trésor</a>
-                                    </li>
+                                    <li><a class="dropdown-item header-text" href="./tresor.html">Chasse au trésor</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item header-text" href="#">Parcours thématiques</a></li>
+                                    <li><a class="dropdown-item header-text" href="#">RainbowLand</a></li>
+                                
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item header-text" href="#">Lieux inmanquables</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -78,8 +86,8 @@
                     </div>
                 </div>
                 <form action="action_page.php">
-                    <input type="search" placeholder="Chercher sur le site" required id="search"><input
-                        class="buttonClass" type="submit" value="OK">
+                    <input type="search" placeholder="Chercher sur le site" required id="search"><input class="buttonClass"
+                        type="submit" value="OK">
                 </form>
             </nav>
         </div>
@@ -101,7 +109,7 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Accueil</a>
                         </li>
                         <li>
                             <hr class="divider">
@@ -109,15 +117,14 @@
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Découvrir la ville
+                                Activités
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Son histoire</a></li>
-                                <li><a class="dropdown-item" href="#">Monuments</a></li>
+                                <li><a class="dropdown-item" href="#">Nature</a></li>
                                 <li><a class="dropdown-item" href="#">Gastronomie</a></li>
-                                <li><a class="dropdown-item" href="#">Divertissements</a></li>
+                                <li><a class="dropdown-item" href="#">Divertissement</a></li>
+                                <li><a class="dropdown-item" href="#">Histoire</a></li>
                                 <li><a class="dropdown-item" href="#">Sport</a></li>
-                                <li><a class="dropdown-item" href="#">Bucolique</a></li>
                                 <li><a class="dropdown-item" href="#">Insolite</a></li>
                             </ul>
                         </li>
@@ -133,7 +140,7 @@
                                 <li><a class="dropdown-item" href="#">Résident</a></li>
                                 <li><a class="dropdown-item" href="#">En famille</a></li>
                                 <li><a class="dropdown-item" href="#">Entre amis</a></li>
-                                <li><a class="dropdown-item" href="#">En couple</a></li>
+                                <li><a class="dropdown-item" href="#">En amoureux</a></li>
                                 <li><a class="dropdown-item" href="#">Seul</a></li>
                                 <li><a class="dropdown-item" href="#">Sportif</a></li>
                                 <li><a class="dropdown-item" href="#">Sénior</a></li>
@@ -147,7 +154,7 @@
                             <a class="nav-link active" href="./tresor.html">Chasse au trésor</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active" href="#">Parcours thématiques</a>
+                            <a class="nav-link active" href="./rainbowland.html">RainbowLand</a>
                         </li>
                         <li>
                             <hr class="divider">
