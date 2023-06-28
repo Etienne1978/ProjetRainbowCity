@@ -2038,13 +2038,15 @@ p {
 
 html {
   position: relative;
-  min-height: 195%;
+  min-height: 150%;
  
 }
 
 
   
-
+.profil{
+  align-items: center;
+}
 
 
 
