@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RainbowCity</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet"  href="./css/header.css">
-    <link rel="stylesheet"  href="./css/index.css">
-    <link rel="stylesheet"  href="./css/inscription.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/inscription.css">
 </head>
+
 <body>
 
-  
-          <!-- Header  -->
+
+    <!-- Header  -->
     <header>
         <!-- Navbar  -->
         <a href="index.html"><img src="./images/logo.png" height="90px" alt="Rainbow City logo"></a>
@@ -63,7 +65,8 @@
                                     Explorez
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item header-text" href="./tresor.html">Chasse au trésor</a></li>
+                                    <li><a class="dropdown-item header-text" href="./tresor.html">Chasse au trésor</a>
+                                    </li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
@@ -77,138 +80,192 @@
                     </div>
                 </div>
                 <form action="action_page.php">
-                    <input type="search" placeholder="Chercher sur le site" required id="search"><input class="buttonClass"
-                        type="submit" value="OK">
+                    <input type="search" placeholder="Chercher sur le site" required id="search"><input
+                        class="buttonClass" type="submit" value="OK">
                 </form>
             </nav>
         </div>
     </header>
-
-
-               <div id="titre">
-
-                                            <h1>Bienvenue sur notre page d'inscription : créer votre compte.</h1>
-
-              </div>
-
-                                        
-              <div class="container">
-                
-                    <div class="row"   id="divrow">
-                                
-                        <!--Etape 1-->
-                        
-                        
-                        <div class="col-4"   id="col1">
-
-                            <form   id="formemail">
-
-                            <article id="art1">
-                                <h6>Veuiller renseigner votre adresse e-mail :</h6>
-                                <input type="email"    class="champ"  placeholder="adresse e-mail"  required  id="email">
-                            </article>
-
-                            <button  type="button"  id="valemail"  onclick="fopacity(col2)" >OK</button>
-
-                            </form>
-                            </div>
-
-
-                    <!--Etape 2-->                               
-                    
-                        <div class="col-4"     id="col2">
-                        <form  id="formpw">
-                            <ul> 
-                                <l>Votre mot de passe doit comporter au moins 8 caractères dont au moins :</l>
-                                <br>                                                    
-                                <li>1 majuscule</li>
-                                <li>1 minuscule</li>
-                                <li>1 chiffre</li>
-                                <li>1 caractère spécial : en exemple &, -, +, ", @...</li>  
-                            <ul>
-                                    <br>
-
-                                <article   id="art2">
-                                    <h6>Veuiller renseigner votre mot de passe :</h6>
-                                    <input type="password"  class="champ" placeholder="mot de passe"   required>
-
-                                    </article>
-
-                                    <br>
-
-                                    <article   id="art3">
-                                    <h6>Veuiller confirmer votre mot de passe :</h6>
-                                    <input type="password"  class="champ" placeholder="confirmation du mot de passe"   required>
-
-
-                                </article>
-
-                                <button  type="button"  id="valpw"   onclick="fopacity(col3)">OK</button>
-
-
-                        </form>
-
-                            <!--Etape 3-->
-                        </div>
-                        <div class="col-4"   id="col3">
-                            <form    id="formval">
-                            <article>
-                                <h6>Validation de votre inscription :</h6>
-                                
-                                <button type="submit"  id="inscription"  formaction="./pageValidationInscription.html">Je m'inscris</button>                                
-                                
-                            </article>
-
-                            </form> 
-                        </div>
+    <!-- Menu burger  -->
+    <nav class="navbar fixed-top offbouton ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                        
-                        
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Accueil</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Activités
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Nature</a></li>
+                                <li><a class="dropdown-item" href="#">Gastronomie</a></li>
+                                <li><a class="dropdown-item" href="#">Divertissement</a></li>
+                                <li><a class="dropdown-item" href="#">Histoire</a></li>
+                                <li><a class="dropdown-item" href="#">Sport</a></li>
+                                <li><a class="dropdown-item" href="#">Insolite</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Vous êtes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Résident</a></li>
+                                <li><a class="dropdown-item" href="#">En famille</a></li>
+                                <li><a class="dropdown-item" href="#">Entre amis</a></li>
+                                <li><a class="dropdown-item" href="#">En amoureux</a></li>
+                                <li><a class="dropdown-item" href="#">Seul</a></li>
+                                <li><a class="dropdown-item" href="#">Sportif</a></li>
+                                <li><a class="dropdown-item" href="#">Sénior</a></li>
+                                <li><a class="dropdown-item" href="#">Entre collègues</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="./tresor.html">Chasse au trésor</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="./rainbowland.html">RainbowLand</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="#">Ecotourisme</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="#">Accès PMR</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" onclick="hasard()" href="#">Lieu au hasard !</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        <div class="d-flex iconemenu">
+                            <!-- <div class="footcolumn header-text">Retrouvez-nous sur :</div> -->
+                            <div>
+                                <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"
+                                        style="color: #ffffff"></i></a>
+                            </div>
+                            <div>
+                                <a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram"
+                                        style="color: #ffffff"></i></a>
+                            </div>
+                            <div>
+                                <a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"
+                                        style="color: #ffffff"></i></a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<div class="corps">
+    <div id="titre">
+        <h1>Créez votre compte en 3 étapes :</h1>
+    </div>
+    <div class="container">
+        <div class="row" id="divrow">
+
+            <!--Etape 1-->
+            <div class="col-4" id="col1">
+                <form id="formemail">
+                    <article id="art1">
+                        <h5>Votre adresse e-mail :</h5>
+                        <input type="email" class="champ" placeholder="rainbow@city.com" list="mail" required id="email"><datalist id="mail"><option value="Rainbow@City.com"></datalist>
+                    </article>
+                    <button type="button" id="valemail" onclick="fopacity(col2)">OK</button>
+                </form>
             </div>
 
-                
-       
+            <!--Etape 2-->
+            <div class="col-4" id="col2">
+                <form id="formpw">
+                    <ul>
+                        <!-- <l>Votre mot de passe doit comporter au moins 8 caractères dont au moins :</l>
+                        <br>
+                        <li>1 majuscule</li>
+                        <li>1 minuscule</li>
+                        <li>1 chiffre</li>
+                        <li>1 caractère spécial : en exemple &, -, +, ", @...</li> -->
+                        <ul>
+                            <br>
+                            <article id="art2">
+                                <h5>Créez votre mot de passe :</h5>
+                                <input type="password" class="champ" placeholder="mot de passe" required>
 
+                            </article>
+                            <br>
+                            <article id="art3">
+                                <h5>Confirmez votre mot de passe :</h5>
+                                <input type="password" class="champ" placeholder="confirmation du mot de passe"
+                                    required>
+                            </article>
+                            <button type="button" id="valpw" onclick="fopacity(col3)">OK</button>
+                </form>
+            </div>
 
-    <br>
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-  <footer>
+            <!--Etape 3-->
+            <div class="col-4" id="col3">
+                <form id="formval">
+                    <article>
+                        <h5>Validez votre inscription :</h5>
+                        <button type="submit" id="inscription" formaction="./pageValidationInscription.html">Je
+                            m'inscris</button>
+                    </article>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
-  </footer>
+    <footer>
+        <span class="header-text">Plan du site</span>
+        <div class="footrow">
+          <!-- <div class="footcolumn header-text">Retrouvez-nous sur :</div> -->
+          <div class="footcolumn">
+            <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter" style="color: #a16737"></i></a>
+          </div>
+          <div class="footcolumn">
+            <a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram" style="color: #a16737"></i></a>
+          </div>
+          <div class="footcolumn">
+            <a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook" style="color: #a16737"></i></a>
+          </div>
+        </div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./js/inscription.js"></script>
+    <script src="./js/header.js"></script>
 
-<script src="./js/inscription.js"></script>
-    
 </body>
+
 </html>
