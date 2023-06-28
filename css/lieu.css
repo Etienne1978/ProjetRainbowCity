@@ -80,7 +80,7 @@ width:75%;
 margin-left:18px;
 }
 
-.titre .btn {
+.comment .btn,.titre .btn {
     font-size: 15px;
     font-family: Arial;
     width: auto;
@@ -96,14 +96,35 @@ margin-left:18px;
     background: rgb(231, 148, 5);
 }
 
-.titre .btn:hover {
+.comment .btn:hover,.titre .btn:hover {
     background: rgb(255, 205, 24)!important;
 }
 
-.titre .btn:active {
+.comment .btn:active,.titre .btn:active {
     background: #c9712b!important;
 }
 
 .comment .btn{
-    
+    margin-left: 25px;
 }
+
+/* [type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  } */
+  
+  /* IMAGE STYLES
+  [type=radio] + img {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+  /* [type=radio]:checked + img {
+    outline: 2px solid #f00;
+  }
+ */
+  .etoile {
+    width:20px!important;
+  }

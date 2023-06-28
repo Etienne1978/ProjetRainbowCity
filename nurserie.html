@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="./css/nurserie.css">
+
+    <title>Rainbow City</title>
+</head>
+
+<body>
+
+    <!-- Header  -->
+    <header>
+        <!-- Navbar  -->
+        <a href="index.html"><img src="./images/logo.png" height="90px" alt="Rainbow City logo" class="rainbowlogo"></a>
+        <div class="flexcol">
+            <nav class="flexrow">
+                <div class="meteo"><a href="./meteo.html" class="header-text" id="meteo"></a><a href="./meteo.html"
+                        class="header-text"><img src="images/sun.png" alt="soleil" class="soleil"></a> </div>
+                <div>
+                    <a href="./presentation.html" class="header-text">Qui sommes-nous ?</a>
+                    <a href="./connexion.html" class="header-text">Connexion</a>
+                    <a href="./connexion.html" class="header-text">Mon profil<img src="./images/icone.png" alt="icone"
+                            class="icone"></a>
+                    <!-- <a href="./favoris.html" class="header-text">Favoris</a><img src="./images/favoris.png" alt="favoris"
+             class="favoris"> -->
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg container d-inline-flex justify-content-end">
+                <div class="container nav-taille">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <!-- <li class="nav-item">
+                         <a class="nav-link active header-text" aria-current="page" href="#">Accueil</a>
+                     </li> -->
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active header-text" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Découvrir la ville
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item header-text" href="#">Son histoire</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item header-text" href="#">Sa culture</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item header-text" href="#">Devenez Resident</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active header-text" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Explorez
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item header-text" href="./tresor.html">Chasse au trésor</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item header-text" href="rainbowland.html">RainbowLand</a>
+                                    </li>
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item header-text" href="#">Lieux inmanquables</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active header-text" onclick="hasard()" href="#">Lieu au hasard !</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <form action="action_page.php">
+                    <input type="search" placeholder="Chercher sur le site" required id="search"
+                        list="recherche"><datalist id="recherche">
+                        <option value="Foret">
+                        <option value="Rainbowland">
+                        <option value="Meteo">
+                        <option value="Chasse au tresor">
+                        <option value="Mairie">
+                        <option value="Cinema">
+                    </datalist><input class="buttonClass" type="button" value="OK">
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menu burger  -->
+    <nav class="navbar fixed-top offbouton ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Accueil</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Activités
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Nature</a></li>
+                                <li><a class="dropdown-item" href="#">Gastronomie</a></li>
+                                <li><a class="dropdown-item" href="#">Divertissement</a></li>
+                                <li><a class="dropdown-item" href="#">Histoire</a></li>
+                                <li><a class="dropdown-item" href="#">Sport</a></li>
+                                <li><a class="dropdown-item" href="#">Insolite</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Vous êtes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Résident</a></li>
+                                <li><a class="dropdown-item" href="#">En famille</a></li>
+                                <li><a class="dropdown-item" href="#">Entre amis</a></li>
+                                <li><a class="dropdown-item" href="#">En amoureux</a></li>
+                                <li><a class="dropdown-item" href="#">Seul</a></li>
+                                <li><a class="dropdown-item" href="#">Sportif</a></li>
+                                <li><a class="dropdown-item" href="#">Sénior</a></li>
+                                <li><a class="dropdown-item" href="#">Entre collègues</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="./tresor.html">Chasse au trésor</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="./rainbowland.html">RainbowLand</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="#">Accès PMR</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="presentation.html">Qui sommes-nous ?</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" onclick="hasard()" href="#">Lieu au hasard !</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        <div class="d-flex iconemenu">
+                            <!-- <div class="footcolumn header-text">Retrouvez-nous sur :</div> -->
+                            <div>
+                                <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"
+                                        style="color: #ffffff"></i></a>
+                            </div>
+                            <div>
+                                <a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram"
+                                        style="color: #ffffff"></i></a>
+                            </div>
+                            <div>
+                                <a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"
+                                        style="color: #ffffff"></i></a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="corps">
+        <div class="d-flex w-75 nurserie">
+            <div><img src="./images/oceane.png" alt="Océane" class="cote"><br><p>Legocéane</p></div>
+            <div class="d-flex texte">
+                <h1>La Nurserie Numé-Brique</h1>
+                <p>Découvrez le domaine du numérique, et apprenez-en les rudiements, brique par brique.<br>Réalisez les plus belles villes en Lego, et qui sait, peut-être serez-vous les fondateurs de votre propre Rainbow City ?</p>
+                <form action="https://www.1formation-1job.com/nurserie/" target="_blank"><button class="bouton">J'y vais!</button></form>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner ">
+                      <div class="carousel-item active">
+                        <img src="./images/nurserie1.jpg" class="d-block w-100 img">
+                      </div>
+                      <div class="carousel-item">
+                       <img src="./images/nurserie2.jpg" class="d-block w-100 img">
+                      </div>
+                      <div class="carousel-item">
+                       <img src="./images/nurserie3.png" class="d-block  w-100 img">
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="./images/sylvain.png" alt="Sylvain" class="cote"><br><p>Captain Super-Sylvain (CSS)</p></div>
+        </div>
+   
+
+        <footer>
+            <span class="header-text">Plan du site</span>
+            <div class="footrow">
+                <!-- <div class="footcolumn header-text">Retrouvez-nous sur :</div> -->
+                <div class="footcolumn">
+                    <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"
+                            style="color: #a16737"></i></a>
+                </div>
+                <div class="footcolumn">
+                    <a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram"
+                            style="color: #a16737"></i></a>
+                </div>
+                <div class="footcolumn">
+                    <a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"
+                            style="color: #a16737"></i></a>
+                </div>
+            </div>
+        </footer>
+
+
+    </div> <!-- </div pour le corps> -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="vanilla-tilt.js"></script> -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

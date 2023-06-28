@@ -9,7 +9,8 @@
     position: relative;
 }
 
-h2, h3{
+h1{
+    margin-top: 0px;
     filter: drop-shadow(0px 2px 2px #6f6f6b);
 }
 
@@ -17,9 +18,19 @@ p{
     text-align: left;
 }
 
+.titre{
+   /* background-color: rgba(224, 242, 255, 0.9);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50px; */
+    width: 75%;
+    /* filter: drop-shadow(0px 3px 4px #000000);*/
+} 
+
+
 .brique{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(190deg, rgba(255,248,210,1) 0%, rgba(255,225,50,1) 20%, rgba(183,105,0,1) 100%);
     -webkit-text-fill-color: transparent;
@@ -77,7 +88,17 @@ form button {
     background: rgb(231, 148, 5);
 }
 
-.tresor{text-align: center;}
+.tresor{
+    text-align: center;
+    background-color: rgba(224, 242, 255, 0.9);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50%;
+    height:350px;
+    width:350px;
+    filter: drop-shadow(0px 3px 4px #000000);
+    padding-top: 65px;
+}
 
 .tresor select{width: 75px;
 }

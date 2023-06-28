@@ -1,0 +1,68 @@
+*{
+    text-decoration: none!important;
+}
+
+h1{
+    margin-top: 0px;
+    filter: drop-shadow(0px 2px 2px #8b8b87);
+}
+
+.bouton{
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-family: Arial;
+    text-align: center;
+    border-width: 0px;
+    color: #ffffff;
+    border-color: #c9712b;
+    font-weight: bold;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    filter: drop-shadow(0px 3.5px 2px #913d0976);
+    text-shadow: 0px 0px 0px #d1884c75;
+    background: rgb(231, 148, 5);
+}
+
+.bouton:hover {
+    background: rgb(255, 205, 24);
+}
+
+.bouton:active {
+    background: #c9712b;
+}
+
+.nurserie{
+    margin-top: 130px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cote {
+    height:300px;
+    filter: drop-shadow(0px 2px 5px #000000b5);
+    border-radius: 10px;
+}
+
+.texte{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.carousel{
+    margin-top: 30px;
+    filter: drop-shadow(0px 3px 4px #000000);
+}
+
+.carousel .active, .carousel-inner{
+    width: 550px!important;
+}
