@@ -30,7 +30,7 @@ p{
 
 .brique{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(190deg, rgba(255,248,210,1) 0%, rgba(255,225,50,1) 20%, rgba(183,105,0,1) 100%);
     -webkit-text-fill-color: transparent;
