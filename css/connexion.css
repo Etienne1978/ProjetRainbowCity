@@ -66,8 +66,7 @@ background-color: bisque;  */
   margin: 15px;
 }
 
-.d-flex,
-.col-4 {
+#col1, #col2, #col3 {
   margin-top: 50px;
   border-radius: 50px;
   /* border:5px solid rgba(128, 128, 128, 0.61); */
