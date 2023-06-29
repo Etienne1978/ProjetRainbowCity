@@ -6,7 +6,7 @@
 
 // Lieu au hasard
 function hasard(){
-    var myrandom=Math.round(Math.random()*28)
+    var myrandom=Math.round(Math.random()*29)
     var link1="./tresor.html"
     var link2="./lieuBar.html"
     var link3="./lieuBibliotheque.html"
@@ -35,6 +35,7 @@ function hasard(){
     var link26="./lieuSupermarche.html"
     var link27="./lieuTheatre.html"
     var link28="./lieuUsine.html"
+    var link29="./lieuCoiffeur.html"
     if (myrandom==0)
         window.location=link1
     else if (myrandom==1)
@@ -91,6 +92,8 @@ function hasard(){
         window.location=link27
         else if (myrandom==27)
         window.location=link28
+        else if (myrandom==28)
+        window.location=link29
 };
 
 
