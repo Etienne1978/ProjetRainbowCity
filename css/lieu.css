@@ -128,3 +128,11 @@ margin-left:18px;
   .etoile {
     width:20px!important;
   }
+
+  .carousel-inner {
+    border-radius: 50px 50px 50px 50px;
+}
+
+.carousel img{
+    border-radius: 0px;
+}
