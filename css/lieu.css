@@ -11,7 +11,7 @@
 h1,
 h2,
 h3 {
-    filter: drop-shadow(0px 2px 2px #8b8b87);
+    filter: drop-shadow(0px 2px 2px #696969);
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -69,6 +69,7 @@ h3 {
     background-color: rgba(224, 242, 255, 0.9)!important;
     border:0px;
     vertical-align: middle;
+    filter: drop-shadow(0px 3.5px 2px #403b3976);
 }
 
 .card .row{
@@ -78,6 +79,10 @@ h3 {
 .card img{
 width:75%;
 margin-left:18px;
+}
+
+.image{
+    filter: drop-shadow(0px 3.5px 2px #403b3976);
 }
 
 .comment .btn,.titre .btn {
@@ -128,6 +133,10 @@ margin-left:18px;
   .etoile {
     width:20px!important;
   }
+
+.carousel{
+    filter: drop-shadow(0px 3.5px 2px #403b3976);
+}
 
   .carousel-inner {
     border-radius: 50px 50px 50px 50px;
