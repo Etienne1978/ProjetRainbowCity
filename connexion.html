@@ -15,7 +15,9 @@
 </head>
 
 <body>
-   <!-- Header  -->
+    <!-- *********** -->
+  <!-- Header  -->
+<!-- *********** -->
   <header>
     <!-- Navbar  -->
     <a href="index.html"><img src="./images/logo.png" height="90px" alt="Rainbow City logo" class="rainbowlogo"></a>
@@ -76,7 +78,7 @@
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item header-text" href="liste.html">Lieux incontrounables</a></li>
+                  <li><a class="dropdown-item header-text" href="liste.html">Lieux incontournables</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
@@ -193,88 +195,96 @@
       </div>
     </div>
   </nav>
-  <div class="corps">
-    <div id="titre">
-        <h1>Bienvenue sur notre page de connexion à votre espace personnel.</h1>
-    </div>
+  <!-- ************** -->
+  <!-- Fin du Header  -->
+  <!-- ************** -->
+    <div class="corps">
+        <div id="titre">
+            <h1>Connexion / Inscription</h1>
+        </div>
 
-    <div class="container">
-        <div class="row" id="divrow">
-            <!--Connexion-->
+        <div class="container">
+            <div class="row" id="divrow">
+                <!--Connexion-->
 
-            <div class="col-4" id="col1">
-                <img src="./images/JeMeConnecte.png" alt="photo compte height=" 225px" width="225px">
-                <form id="formemail">
-                    <article id="art1">
-                        <h6>Veuiller renseigner votre adresse e-mail :</h6>
-                        <input type="email" class="champ" placeholder="adresse e-mail" required id="email" list="mail" /><datalist id="mail"><option value="Rainbow@City.com"></datalist>
-                        <h6 id="h6_2">Veuiller renseigner votre mot de passe :</h6>
-                        <input type="password" class="champ" placeholder="mot de passe" required id="email" />
-                    </article>
-                    <button type="submit" id="codes" formaction="./pageprofil.html">
-                        Connexion
-                    </button>
-                </form>
-            </div>
+                <div class="d-flex" id="col1">
+                    <img src="./images/JeMeConnecte.png" alt="photo compte">
+                    <form id="formemail">
+                        <article id="art1">
+                            <h6>Adresse e-mail :</h6>
+                            <input type="email" class="champ" placeholder="rainbow@city.com" required id="email"
+                                list="mail" /><datalist id="mail">
+                                <option value="Rainbow@City.com">
+                            </datalist>
+                            <h6 id="h6_2">Mot de passe :</h6>
+                            <input type="password" class="champ" placeholder="mot de passe" required id="email" />
+                        </article>
+                        <button type="submit" id="codes" formaction="./pageprofil.html">
+                            Connexion
+                        </button>
+                    </form>
+                </div>
 
-            <!--Mot de passe oublié-->
-
-            <div class="col-4" id="col2">
-                <form id="formpw">
-                    <img src="./images/ImMotDePasseOublié.png" alt="Image mot de passe oublié" height="180px"
-                        width="250px" />
-                    <article id="art2">
-                        <h6>Veuiller renseigner votre adresse e-mail ?</h6>
-                        <input type="email" class="champ" placeholder="adresse e-mail" id="email2" required list="mail"/><datalist id="mail"><option value="Rainbow@City.com"></datalist>
-                    </article>
-                    <br />
-                    <button type="submit" id="valemail" formaction="./motdepasseoublé.html">
-                        OK
-                    </button>
-                </form>
+                <!--Mot de passe oublié-->
+                <div class="d-flex" id="col2">
+                    <img src="./images/ImMotDePasseOublié.png" alt="Image mot de passe oublié"/>
+                    <form id="formpw">
+                        <article id="art2">
+                            <h6>Adresse e-mail du compte :</h6>
+                            <input type="email" class="champ" placeholder="adresse e-mail" id="email2" required
+                                list="mail" /><datalist id="mail">
+                                <option value="Rainbow@City.com">
+                            </datalist>
+                        </article>
+                        <br />
+                        <button type="submit" id="valemail" formaction="./motdepasseoublé.html">
+                            OK
+                        </button>
+                    </form>
+                </div>
 
                 <!--Pas encore de compte-->
-            </div>
-            <div class="col-4" id="col3">
-                <form id="formval">
-                    <img src="./images/PasEncoreDeCompte.png" alt="Photo pas encore de compte" height="290px" />
-                    <button type="submit" id="creation" formaction="./inscription.html">
-                        Inscription
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <br />
+                <div class="d-flex" id="col3">
+                    <img src="./images/PasEncoreDeCompte.png" alt="Photo pas encore de compte"/>
+                    <form id="formval">
+                        <button type="submit" id="creation" formaction="./inscription.html">
+                            Inscription
+                        </button>
+                    </form>
+                </div>
 
-    <footer>
-        <span class="header-text"><a href="./mentionsLegales.html" class="header-text">Mentions légales</a></span>
-        <div class="footrow">
-          <!-- <div class="footcolumn header-text">Retrouvez-nous sur :</div> -->
-          <div class="footcolumn">
-            <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter" style="color: #a16737"></i></a>
-          </div>
-          <div class="footcolumn">
-            <a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram" style="color: #a16737"></i></a>
-          </div>
-          <div class="footcolumn">
-            <a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook" style="color: #a16737"></i></a>
-          </div>
+            </div>
         </div>
-      </footer>
-  
-  
+        <br />
+
+        <footer>
+            <span class="header-text"><a href="./mentionsLegales.html" class="header-text">Mentions légales</a></span>
+            <div class="footrow">
+              <!-- <div class="footcolumn header-text">Retrouvez-nous sur :</div> -->
+              <div class="footcolumn">
+                <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter" style="color: #a16737"></i></a>
+              </div>
+              <div class="footcolumn">
+                <a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram" style="color: #a16737"></i></a>
+              </div>
+              <div class="footcolumn">
+                <a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook" style="color: #a16737"></i></a>
+              </div>
+            </div>
+          </footer>
+
+
     </div> <!-- </div pour le corps> -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"></script>
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
     <!-- <script type="text/javascript" src="vanilla-tilt.js"></script> -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script src="./js/header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"></script>
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
     <script src="./connexion.js"></script>
 </body>
 
