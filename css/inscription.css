@@ -39,19 +39,50 @@ h5{
   justify-content: space-around;
 }
 
-#valemail {
+/* #valemail {
   height: 50px;
   width: 55px;
   background-color: red;
   color: rgb(255, 255, 255);
   margin: 15px;
-  /* margin-left: 150px; */
+  margin-left: 150px;
   border-radius: 50px;
   font-size: 20px;
   font-weight: bold;
+} */
+
+#valemail{
+  height: 50px;
+  width: 55px;
+  border-radius: 50px;
+  margin: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50px;
+  font-family: Arial;
+  text-align: center;
+  border-width: 2px;
+  color: #ffffff;
+  border-color: #fd1414;
+  font-weight: bold;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  filter: drop-shadow(0px 3.5px 2px #913d0976);
+  text-shadow: 0px 0px 0px #d1884c75;
+  background: #de0000;
 }
 
-#valpw {
+#valemail:hover {
+  background: rgb(251, 91, 91);
+}
+
+#valemail:active {
+  background: #980000;
+}
+
+/* #valpw {
   height: 50px;
   width: 55px;
   background-color: orange;
@@ -62,6 +93,37 @@ h5{
   border-radius: 50px;
   font-size: 20px;
   font-weight: bold;
+} */
+
+#valpw{
+  height: 50px;
+  width: 55px;
+  margin: 15px;
+  margin-left: 120px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
+  text-align: center;
+  border-width: 2px;
+  color: #ffffff;
+  border-color: rgb(255, 219, 110);
+  font-weight: bold;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  filter: drop-shadow(0px 3.5px 2px #913d0976);
+  text-shadow: 0px 0px 0px #d1884c75;
+  background: rgb(254, 196, 24);
+}
+
+#valpw:hover{
+  background: rgb(255, 227, 127);
+}
+
+#valpw:active{
+  background: #c9712b;
 }
 
 #col2,
@@ -108,7 +170,7 @@ li {
   margin-left: 20px;
 }
 
-#inscription {
+/* #inscription {
   height: 50px;
   width: 150px;
   background-color: rgb(34, 168, 0);
@@ -116,6 +178,37 @@ li {
   font-weight: bold;
   font-size: 20px;
   border-radius: 50px;
+} */
+
+#inscription{
+  height: 50px;
+  width: 150px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50px;
+  border-radius: 50px;
+  font-family: Arial;
+  text-align: center;
+  border-width: 2px;
+  color: #ffffff;
+  border-color: #5bf402;
+  font-weight: bold;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  filter: drop-shadow(0px 3.5px 2px #09912076);
+  text-shadow: 0px 0px 0px #d1884c75;
+  background: #66ed18;
+}
+
+
+#inscription:hover{
+  background: rgb(177, 255, 100);
+}
+
+#inscription:active{
+  background: #318b00;
 }
 
 #art1 {

@@ -5,6 +5,7 @@
 h1{
     margin-top: 0px;
     filter: drop-shadow(0px 2px 2px #8b8b87);
+    margin-bottom: 20px;
 }
 
 .bouton{
@@ -13,6 +14,8 @@ h1{
     border-radius: 50px;
     font-size: 25px;
     font-family: Arial;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
     border-width: 0px;
     color: #ffffff;
@@ -35,8 +38,21 @@ h1{
     background: #c9712b;
 }
 
+.lego{
+    color: white;
+    font-size: 20px;
+    filter: drop-shadow(0px 2px 1px #08080876);
+}
+
+.jpp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
 .nurserie{
-    margin-top: 130px;
+    margin-top: 140px;
     justify-content: space-between;
     align-items: center;
 }
@@ -51,11 +67,11 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    width: 710px;
 }
 
 p{
     text-align: center;
-    margin-top: 20px;
 }
 
 .carousel{
