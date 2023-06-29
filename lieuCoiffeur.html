@@ -10,87 +10,80 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/lieu.css">
-    <title>Bibliothèque</title>
+    <title>Salon de coiffure</title>
 </head>
 
-    <!-- Header  -->
-    <header>
-        <!-- Navbar  -->
-        <a href="index.html"><img src="./images/logo.png" height="90px" alt="Rainbow City logo" class="rainbowlogo"></a>
-        <div class="flexcol">
-            <nav class="flexrow">
-                <div class="meteo"><a href="./meteo.html" class="header-text" id="meteo"></a><a href="./meteo.html" class="header-text"><img
-                    src="images/sun.png" alt="soleil" class="soleil"></a> </div>
-        <div>
-                    <a href="./nous.html" class="header-text">Qui sommes-nous ?</a>
-                    <a href="./connexion.html" class="header-text">Connexion</a>
-                    <a href="./connexion.html" class="header-text">Mon profil<img src="./images/icone.png" alt="icone"
-                            class="icone"></a>
-                    <!-- <a href="./favoris.html" class="header-text">Favoris</a><img src="./images/favoris.png" alt="favoris"
+<!-- Header  -->
+<header>
+    <!-- Navbar  -->
+    <a href="index.html"><img src="./images/logo.png" height="90px" alt="Rainbow City logo" class="rainbowlogo"></a>
+    <div class="flexcol">
+        <nav class="flexrow">
+            <div class="meteo"><a href="./meteo.html" class="header-text">Vendredi 30/06/2023<img
+                        src="images/soleil.png" alt="soleil" class="soleil"></a> </div>
+            <div>
+                <a href="./nous.html" class="header-text">Qui sommes-nous ?</a>
+                <a href="./connexion.html" class="header-text">Connexion</a>
+                <a href="./connexion.html" class="header-text">Mon profil<img src="./images/icone.png" alt="icone"
+                        class="icone"></a>
+                <!-- <a href="./favoris.html" class="header-text">Favoris</a><img src="./images/favoris.png" alt="favoris"
              class="favoris"> -->
-                </div>
-            </nav>
-            <nav class="navbar navbar-expand-lg container d-inline-flex justify-content-end">
-                <div class="container nav-taille">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <!-- <li class="nav-item">
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg container d-inline-flex justify-content-end">
+            <div class="container nav-taille">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-item">
                          <a class="nav-link active header-text" aria-current="page" href="#">Accueil</a>
                      </li> -->
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active header-text" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Découvrir la ville
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item header-text" href="#">Son histoire</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item header-text" href="#">Sa culture</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item header-text" href="#">Devenez Resident</a></li>
-                                </ul>  
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active header-text" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Explorez
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item header-text" href="./tresor.html">Chasse au trésor</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item header-text" href="#">RainbowLand</a></li>
-                                
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active header-text" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Découvrir la ville
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item header-text" href="#">Son histoire</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item header-text" href="#">Lieux inmanquables</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active header-text" onclick="hasard()" href="#">Lieu au hasard !</a>
-                            </li>
-                        </ul>
-                    </div>
+                                <li><a class="dropdown-item header-text" href="#">Monuments</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active header-text" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Explorez
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item header-text" href="./tresor.html">Chasse au trésor</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item header-text" href="#">Parcours thématiques</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active header-text" onclick="hasard()" href="#">Lieu au hasard !</a>
+                        </li>
+                    </ul>
                 </div>
-                <form action="action_page.php">
-                    <input type="search" placeholder="Chercher sur le site" required id="search"><input class="buttonClass"
-                        type="submit" value="OK">
-                </form>
-            </nav>
-        </div>
-    </header>
+            </div>
+            <form action="action_page.php">
+                <input type="search" placeholder="Chercher sur le site" required id="search"><input class="buttonClass"
+                    type="submit" value="OK">
+            </form>
+        </nav>
+    </div>
+</header>
+
+<body>
 
     <!-- Menu burger  -->
     <nav class="navbar fixed-top offbouton ">
@@ -116,14 +109,15 @@
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Activités
+                                Découvrir la ville
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Nature</a></li>
+                                <li><a class="dropdown-item" href="#">Son histoire</a></li>
+                                <li><a class="dropdown-item" href="#">Monuments</a></li>
                                 <li><a class="dropdown-item" href="#">Gastronomie</a></li>
-                                <li><a class="dropdown-item" href="#">Divertissement</a></li>
-                                <li><a class="dropdown-item" href="#">Histoire</a></li>
+                                <li><a class="dropdown-item" href="#">Divertissements</a></li>
                                 <li><a class="dropdown-item" href="#">Sport</a></li>
+                                <li><a class="dropdown-item" href="#">Bucolique</a></li>
                                 <li><a class="dropdown-item" href="#">Insolite</a></li>
                             </ul>
                         </li>
@@ -139,7 +133,7 @@
                                 <li><a class="dropdown-item" href="#">Résident</a></li>
                                 <li><a class="dropdown-item" href="#">En famille</a></li>
                                 <li><a class="dropdown-item" href="#">Entre amis</a></li>
-                                <li><a class="dropdown-item" href="#">En amoureux</a></li>
+                                <li><a class="dropdown-item" href="#">En couple</a></li>
                                 <li><a class="dropdown-item" href="#">Seul</a></li>
                                 <li><a class="dropdown-item" href="#">Sportif</a></li>
                                 <li><a class="dropdown-item" href="#">Sénior</a></li>
@@ -199,18 +193,17 @@
     <div class="d-flex flexcol lieu">
         <div class="row g-0 titre">
             <div class="col-md-6 image">
-                <img src="./images/Bibliothèque.jpg" alt="opéra lego">
+                <img src="./images/coiffeur.jpg"    alt="Coiffeur">
             </div>
             <div class="col-md-6">
                 <div class="row g-0">
-                    <h1>Bibliothèque<br>"Croc'Blocks"</h1>
+                    <h1>Légo coupé décalé</h1>
                 </div>
                 <div class="row g-0 lieutxt">
-                    <p>Croc' Blocks est un lieu où petits et grands peuvent venir partager leur passion de la lecture. Donner envie de croquer des blocks de textes, autrement dit, des books, est notre coeur de métier. Alors bonne lecture à toutes et tous !</p>
-                </div>
+                    <p>Les légo à l'image de notre belle ville pleine de couleurs! Ce doivent d'avoir des légocheveux soyeux, colorés et resplendissant !</p>
                 <div class="row g-0 lieutxt2">
                     <div class="col-md-6">
-                        <p>Avis : *****</p>
+                        <p>Avis : 5/5</p>
                     </div>
                     <div class="col-md-6">
                         <p> <a href="#" class="btn">Ajouter aux favoris</a></p>
@@ -233,14 +226,14 @@
                                 <div class="card-body">
                                     <div class="row g-0">
                                         <div class="col-md-8">
-                                            <h5>Joyeux59 (30/05/2023)</h5>
+                                            <h5>Roger (02/05/2023)</h5>
                                         </div>
                                         <div class="col-md-4">
-                                            <h5>Avis : *****</h5>
+                                            <h5>Avis: 5/5</h5>
                                         </div>
                                     </div>
                                     <div class="row g-0">
-                                        <p class="card-text">J'aime beaucoup croquer des blocks. </p>
+                                        <p class="card-text">J'adore ma légocoiffure tout comme la coiffeuse héhéhé :)! </p>
                                     </div>
                                 </div>
                             </div>
@@ -255,15 +248,16 @@
                                 <div class="card-body">
                                     <div class="row g-0">
                                         <div class="col-md-8">
-                                            <h5>Simplet._. (10/06/2023)</h5>
+                                            <h5>Sophie</S> (10/06/2023)</h5>
                                         </div>
                                         <div class="col-md-4">
-                                            <h5>Avis : ***</h5>
+                                            <h5>Avis : 0/5</h5>
                                         </div>
                                     </div>
                                     <div class="row g-0">
-                                        <p class="card-text">Certains blocks sont dures à croquer !!!
-                                            </p>
+                                        <p class="card-text">#Ah nn mé hallo koi!<br>
+                                             #G dmandé 1 légoblond vénicien! J'ressort d'lo ac 1 couleurs légo style arc en ciel :'(<br> 
+                                            # Mais WHAT THE FUCK chui o bout 2 ma life :'( </p>
                                     </div>
                                 </div>
                             </div>
@@ -272,20 +266,20 @@
                     <div class="card flexrow ">
                         <div class="row g-0">
                             <div class="col-md-1">
-                                <img src="./images/TêteLego_Femme.jpg" class="card-img-top" alt="lego">
+                                <img src="./images/icone.png" class="card-img-top" alt="lego">
                             </div>
                             <div class="col-md-11">
                                 <div class="card-body">
                                     <div class="row g-0">
                                         <div class="col-md-8">
-                                            <h5>JaimeMamie59 (23/06/2023)</h5>
+                                            <h5>muriel (29/06/2023)</h5>
                                         </div>
                                         <div class="col-md-4">
-                                            <h5>Avis : ****</h5>
+                                            <h5>Avis : 5/5</h5>
                                         </div>
                                     </div>
                                     <div class="row g-0">
-                                        <p class="card-text">J'aime beaucoup leurs espaces de travail.</p>
+                                        <p class="card-text">Trés bon résultat, je suis trés contente, la coiffeuse avait raison je me sent rajeunis!!</p>
                                     </div>
                                 </div>
                             </div>
@@ -298,36 +292,29 @@
             <div class="row g-0 commentaires">
                 <h3>Laissez-nous votre avis</h3>
             </div>
-            <form method="get">
-                <div class="row g-0">
-                    <div class="cartes d-flex flexcol">
-                        <div class="card flexrow ">
-                            <div class="row g-0">
-                                <div class="col-md-1">
-                                    <img src="./images/icone.png" class="card-img-top" alt="lego">
-                                </div>
-                                <div class="col-md-11">
-                                    <div class="card-body">
-                                        <div class="row g-0">
-                                            <div class="col-md-10">
-                                                <div class="row g-0">
-                                                    <div class="col-md-8">
-                                                        <h5>Super_Syl (30/06/2023)</h5>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <p>Avis : <input type="radio" name="avis" id="avis1" required><!-- <label for="avis1"><img src="./images/favoris.png" class="etoile"></label> --><input type="radio" name="avis" id="avis2" required><input type="radio" name="avis" id="avis3" required><input type="radio" name="avis" id="avis4" required><input type="radio" name="avis" id="avis5"required ></p>
-                                                    </div>
-                                                </div>
-                                                <div class="row g-0 ">
-                                                    <div class="col-md-12">
-                                                        <textarea placeholder="Votre commentaire" cols="30" rows="3"
-                                                            class="w-100"required></textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2 comment">
-                                                <button type="submit" href="#" class="btn">Envoyer</a>
-                                            </div>
+            <div class="row g-0">
+                <div class="cartes d-flex flexcol">
+                    <div class="card flexrow ">
+                        <div class="row g-0">
+                            <div class="col-md-1">
+                                <img src="./images/icone.png" class="card-img-top" alt="lego">
+                            </div>
+                            <div class="col-md-11">
+                                <div class="card-body">
+                                    <div class="row g-0">
+                                        <div class="col-md-8">
+                                            <h5>Super_Syl (30/06/2023)</h5>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h5>Avis : </h5>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">
+                                        <div class="col-md-10">
+                                        <textarea placeholder="Votre commentaire" cols="30" rows="3" class="w-100"></textarea>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="#" class="btn">Envoyer</a>
                                         </div>
                                     </div>
                                 </div>
@@ -335,28 +322,26 @@
                         </div>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 
 
-    <footer>
-        <span class="header-text">Plan du site</span>
-        <div class="footrow">
-            <!-- <div class="footcolumn header-text">Retrouvez-nous sur :</div> -->
-            <div class="footcolumn">
-                <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter" style="color: #a16737"></i></a>
-            </div>
-            <div class="footcolumn">
-                <a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram"
-                        style="color: #a16737"></i></a>
-            </div>
-            <div class="footcolumn">
-                <a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"
-                        style="color: #a16737"></i></a>
-            </div>
+<footer>
+    <span class="header-text">Plan du site</span>
+    <div class="footrow">
+        <!-- <div class="footcolumn header-text">Retrouvez-nous sur :</div> -->
+        <div class="footcolumn">
+            <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter" style="color: #a16737"></i></a>
         </div>
-    </footer>
+        <div class="footcolumn">
+            <a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram" style="color: #a16737"></i></a>
+        </div>
+        <div class="footcolumn">
+            <a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook" style="color: #a16737"></i></a>
+        </div>
+    </div>
+</footer>
 </div> <!-- div du body -->
 
 <!-- script JS pour bootstrap  -->
