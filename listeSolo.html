@@ -200,6 +200,12 @@
 
 <!-- Corps du texte  -->
 <div class="corps">
+   <!-- Bouton retour en haut -->
+   <div id="scrollUp" class="transition-opacity">
+    <a href="#top"><img src="./images/totop.png" class="totop" data-bs-container="body" data-bs-toggle="popover"
+        data-bs-placement="left" data-bs-content="Retour vers le haut" data-bs-trigger="hover"
+        data-bs-custom-class="custom-popover" /></a>
+  </div>
     <!-- <div id="headerbody"> -->
     <h1>En solo</h1>
     <div class="cartes d-flex flexcol">
@@ -376,6 +382,12 @@
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
 <script src="./js/header.js"></script>
+<script>
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+  })
+</script>
 </body>
 
 </html>
