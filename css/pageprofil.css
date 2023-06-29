@@ -2055,5 +2055,61 @@ html {
 }
 
 
+.btn-favoris {
+  width: auto; /* Ajuste la largeur automatiquement */
+  margin-left: 10px; /* Ajoute une marge à gauche pour les espacer */
+}
+
+
+#favoris-button {
+  position:absolute;
+  top: 54.2%;
+  right: 25px;
+  translate(-50%, -50%);
+  background-color: #d7dd65;
+  color: #f5f5f2;
+  padding: 3px 27px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+
+
+
+
+#favoris-button:hover,
+#favoris-button:focus {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-10px);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(-10px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
 
 
