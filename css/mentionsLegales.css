@@ -1,8 +1,22 @@
 h1{
-    margin-top: 150px;
+    margin-top: 155px;
     filter: drop-shadow(0px 2px 2px #8b8b87);
 }
 
+
+
+
 .texte{
-    justify-content: center;
+    text-align: center;
+}
+
+#mlegales{
+            display: flex;
+            flex-direction: column;
+ }
+
+
+#mlegales>iframe{
+    margin-bottom: 5px;
+    margin-left:150px;
 }
