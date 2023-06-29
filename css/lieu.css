@@ -52,6 +52,7 @@ h3 {
 
 .commentaires{
     text-align: center;
+    margin-top: 20px;
 }
 
 
@@ -79,6 +80,10 @@ h3 {
 .card img{
 width:75%;
 margin-left:18px;
+}
+
+.g-0{
+    width: 100%;
 }
 
 .image{
